@@ -7,8 +7,8 @@
         <a href="https://www.primefaces.org/primevue" target="_blank">PrimeVue Documentation</a>
   </p>
 
-  <Button @click="state.count++" :label="Count"></Button>
-  <h6>{ state.count }}</h6>
+  <Button @click="state.count++" label="Count"></Button>
+  <h6>{{ state.count }}</h6>
 
   <p>
     Edit
