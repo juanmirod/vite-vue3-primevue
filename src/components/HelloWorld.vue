@@ -7,8 +7,8 @@
         <a href="https://www.primefaces.org/primevue" target="_blank">PrimeVue Documentation</a>
   </p>
 
-  <Button @click="state.count++" label="Count"></Button>
-  <h6>{{ state.count }}</h6>
+  <p-button @click="state.count++" label="Count++"></p-button>
+  <h2>{{ state.count }}</h2>
 
   <p>
     Edit
@@ -17,7 +17,8 @@
 </template>
 
 <script setup>
-import { defineProps, reactive } from 'vue'
+import { defineProps, reactive } from 'vue';
+import PButton from 'primevue/button';
 
 defineProps({
   msg: String
